@@ -1,0 +1,15 @@
+package chapter2.child3.study7;
+
+public class ThreadB extends Thread {
+	
+	private Service service;
+	public ThreadB(Service service) {
+		this.service = service;
+	}
+	
+	@Override
+	public void run() {
+		service.stopMethod();
+	}
+
+}
